@@ -136,3 +136,37 @@ html {
 .videolist-item__desc__paragraph {
   font-size: 12px;
 }
+
+.novruz {
+  border: 2px solid white;
+  text-align: center;
+  font-size: 22px;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.novruz h2 {
+  color: yellowgreen;
+}
+
+.novruz h6 {
+  color: green;
+}
+
+@media only screen and (max-width: 1050px) {
+  .video-content {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .videolist {
+    width: 100%;
+    order: 2;
+    border: 1px solid white;
+    border-radius: 6px;
+    height: calc(100vh - 220px);
+    overflow-y: scroll;
+    padding: 25px;
+  }
+}

@@ -5,6 +5,7 @@ import VideoList from './VideoList';
 import Loader from './Loader';
 import VideoItem from './VideoItem';
 import VideoDescription from './VideoDescription';
+import NovruzAmirov from './NovruzAmirov';
 import axios from 'axios';
 import {YOUTUBE_API_KEY} from '../api';
 
@@ -48,10 +49,10 @@ class App extends React.Component{
                     handleVideoSelection={this.handleVideoSelection} 
                     shouldShrink={Boolean(this.state.selectedVideo)} 
                     />
-                   
-                    
+                
                 </div>
-
+                {Boolean(this.state.videoList.length === 0) && <NovruzAmirov shouldSeen={this.state.videoList}/>}
+                
                 
             </div>
         )
