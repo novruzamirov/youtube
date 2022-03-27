@@ -155,7 +155,6 @@ html {
 
 @media only screen and (max-width: 1050px) {
   .video-content {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
   }
@@ -163,10 +162,24 @@ html {
   .videolist {
     width: 100%;
     order: 2;
-    /* border: 1px solid white; */
     border-radius: 6px;
-    /* height: calc(100vh - 220px); */
     overflow-y: scroll;
     padding: 25px;
+  }
+
+  /* .videolist-item img {
+    width: 100px;
+  } */
+}
+
+@media only screen and (max-width: 600px) {
+  .videolist-item img {
+    width: 100px;
+  }
+  .videolist-item__desc h4 {
+    font-size: 15px;
+  }
+  .videolist-item__desc p {
+    font-size: 12px;
   }
 }

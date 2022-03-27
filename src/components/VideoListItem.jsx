@@ -6,7 +6,7 @@ class VideoListItem extends React.Component{
                 <div className="videolist-item" onClick={() => {
                     this.props.handleVideoSelection(this.props.videos);
                 }}>
-                    <img  src={
+                    <img src={
                         this.props.shouldShrink 
                         ? this.props.videos.snippet.thumbnails.default.url 
                         : this.props.videos.snippet.thumbnails.medium.url
